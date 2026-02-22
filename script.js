@@ -85,13 +85,17 @@ predictBtn.addEventListener("click", async () => {
         const confidence = (data.confidence * 100).toFixed(1);
         if (data.confidence < 0.10) {
             document.getElementById("className").innerText = "❌ Not a cat or dog";
-            document.getElementById("confidenceText").innerText = `${confidence}%`;
-            document.getElementById("barFill").style.width = `${confidence}%`;
+            document.getElementById("confidenceText").innerText = "";
+            document.getElementById("barFill").style.width = "0%";
+            document.querySelector(".confidence-label").style.display = "none";
+            document.querySelector(".bar-track").style.display = "none";
             resultCard.hidden = false;
             loading.style.display = "none";
             predictBtn.disabled = false;
             return;
         }
+        document.querySelector(".confidence-label").style.display = "flex";
+        document.querySelector(".bar-track").style.display = "block";
 
         // Display result
         document.getElementById("className").innerText = `🐾 ${className}`;
