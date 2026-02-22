@@ -79,6 +79,10 @@ predictBtn.addEventListener("click", async () => {
         if (!response.ok) throw new Error("Server error");
 
         const data = await response.json();
+
+        // Format class name
+        const className = data.class.replace(/_/g, " ");
+        const confidence = (data.confidence * 100).toFixed(1);
         if (data.confidence < 0.10) {
             document.getElementById("className").innerText = "❌ Not a cat or dog";
             document.getElementById("confidenceText").innerText = `${confidence}%`;
@@ -88,9 +92,6 @@ predictBtn.addEventListener("click", async () => {
             predictBtn.disabled = false;
             return;
         }
-        // Format class name
-        const className = data.class.replace(/_/g, " ");
-        const confidence = (data.confidence * 100).toFixed(1);
 
         // Display result
         document.getElementById("className").innerText = `🐾 ${className}`;
