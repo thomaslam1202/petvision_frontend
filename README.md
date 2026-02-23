@@ -20,7 +20,7 @@ I trained a fine‑grained 38‑class cat and dog breed classifier using the Oxf
 - Validation Accuracy: 0.9284
 EfficientNet‑B3 was chosen for its strong performance on fine‑grained image tasks, especially when dataset size is limited.
 
-🧠 Dataset Challenges & Solutions
+# 🧠 Dataset Challenges & Solutions
 📉 Limited Data Per Class
 Each breed had only 100–200 images, with varying quality.
 To overcome this:
@@ -36,7 +36,7 @@ Solution:
 Some cat breeds look extremely similar, making classification difficult.
 I manually inspected and filtered ambiguous images to help the model learn clearer patterns.
 
-🌐 Deployment Architecture
+# 🌐 Deployment Architecture
 Backend
 - FastAPI inference server
 - Packaged with Docker
@@ -51,7 +51,7 @@ Frontend
 - Clean, simple UI for uploading pet photos
 This setup allowed me to build a fully functional, zero‑cost, production‑style ML application.
 
-🎯 What I Learned
+# 🎯 What I Learned
 This project taught me the full ML pipeline end to end:
 - How to structure and clean image datasets
 - How to train and optimize deep learning models
