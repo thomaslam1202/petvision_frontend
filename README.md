@@ -1,8 +1,11 @@
 # 🐶🐱 Cat & Dog Breed Classifier (38 Classes)
 End‑to‑End Machine Learning Project — From Dataset → Training → Deployment
-🔗 **Live Demo (Frontend):** https://thomaslam1202.github.io/petvision/
-🔗 Backend API (Hugging Face Space): https://huggingface.co/spaces/Thomaslam1202/petvision_backend
-🔗 FastAPI Swagger Docs: https://thomaslam1202-petvision-backend.hf.space/docs
+**🔗 Live Demo (Frontend):** 
+https://thomaslam1202.github.io/petvision/
+**🔗 Backend API (Hugging Face Space):**
+https://huggingface.co/spaces/Thomaslam1202/petvision_backend
+**🔗 FastAPI Swagger Docs:**
+https://thomaslam1202-petvision-backend.hf.space/docs
 This project represents my first full end‑to‑end machine learning system, built completely from scratch to learn the entire ML lifecycle: data preparation, model training, optimization, backend deployment, and frontend integration.
 I trained a fine‑grained 38‑class cat and dog breed classifier using the Oxford-IIIT Pet Dataset, implemented with PyTorch and deployed as a live web application using FastAPI, Docker, Hugging Face Spaces, and a custom HTML/CSS/JavaScript frontend hosted on GitHub Pages.
 
