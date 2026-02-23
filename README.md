@@ -2,7 +2,7 @@
 End‑to‑End Machine Learning Project — From Dataset → Training → Deployment
 
 **🔗 Live Demo (Frontend):** 
-https://thomaslam1202.github.io/petvision/
+https://thomaslam1202.github.io/Pet-Classifier/
 
 **🔗 Backend API (Hugging Face Space):**
 https://huggingface.co/spaces/Thomaslam1202/petvision_backend
